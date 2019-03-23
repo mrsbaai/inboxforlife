@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4731429c7f25ab92eaa813447a972209",
+    "content-hash": "a5ea908fd16a110a429002cb1c449eb8",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1390,6 +1390,49 @@
                 "uuid"
             ],
             "time": "2018-07-19T23:38:55+00:00"
+        },
+        {
+            "name": "robdudley/smtp-validate-email",
+            "version": "0.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/robdudley/smtp-validate-email.git",
+                "reference": "ee7cef706c4e8b34a75ae83bd13e659ffe4890ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/robdudley/smtp-validate-email/zipball/ee7cef706c4e8b34a75ae83bd13e659ffe4890ef",
+                "reference": "ee7cef706c4e8b34a75ae83bd13e659ffe4890ef",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SMTPValidateEmail\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Tomaš Trkulja [zytzagoo]",
+                    "email": "zyt@zytzagoo.net"
+                },
+                {
+                    "name": "Rob Dudley",
+                    "email": "rob@rcwd.me"
+                }
+            ],
+            "description": "Validates an email address by checking for MX records and performing and SMTP triplet connection",
+            "homepage": "https://github.com/robdudley/smtp-validate-email",
+            "keywords": [
+                "email",
+                "smtp",
+                "validation"
+            ],
+            "time": "2016-08-04T09:47:50+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
