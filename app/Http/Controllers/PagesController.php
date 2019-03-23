@@ -12,8 +12,8 @@ class PagesController extends Controller
     public function home(){
 
 
-        $from = 'sendingemail@test.test';
-        $email = 'emailtoverify@test.test';
+        $from = 'example@hotmail.com';
+        $email = 'blooddity@hotmail.com';
 
         $validator = new SMTPValidateEmail($email, $from);
         $smtp_results = $validator->validate();
