@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use SMTPValidateEmail\SMTPValidateEmail;
+
+use SMTPValidateEmail\Validator as SmtpEmailValidator;
 
 class PagesController extends Controller
 {
@@ -12,13 +13,21 @@ class PagesController extends Controller
     public function home(){
 
 
-        $from = 'example@hotmail.com';
+        $sender = 'example@hotmail.com';
         $email = 'blooddity@hotmail.com';
 
-        $validator = new SMTPValidateEmail($email, $from);
-        $smtp_results = $validator->validate();
 
-        print_r($smtp_results);
+        $validator = new SmtpEmailValidator($email, $sender);
+
+// If debug mode is turned on, logged data is printed as it happens:
+// $validator->debug = true;
+        $results   = $validator->validate();
+
+        var_dump($results);
+
+// Get log data (log data is always collected)
+        $log = $validator->getLog();
+        var_dump($log);
 
     }
 }
