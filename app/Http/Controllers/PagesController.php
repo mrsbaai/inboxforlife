@@ -22,13 +22,12 @@ class PagesController extends Controller
 // If debug mode is turned on, logged data is printed as it happens:
 // $validator->debug = true;
         $results   = $validator->validate();
-        print("<pre>".var_dump($results)."</pre>");
-        echo"<br/>-----------------------------------<br/>";
+return $results->toJson();
 
 
 // Get log data (log data is always collected)
-        $log = $validator->getLog();
-        print("<pre>".var_dump($log)."</pre>");
+        //$log = $validator->getLog();
+        
 
 
     }
