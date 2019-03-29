@@ -118,8 +118,13 @@ class PagesController extends Controller
 
         );
 
-        $validator = new SmtpEmailValidator($emails, $sender);
-        $results   = $validator->validate();
+
+        $validator = new SmtpEmailValidator();
+        $results = array();
+        foreach($emails as $email){
+            array_push($results, $validator->validate($email, $sender));
+        }
+        
         $log = $validator->getLog();
         return Response::json(array($results, $log));
 
