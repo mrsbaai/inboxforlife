@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 
+use Illuminate\Support\Facades\Response;
 use SMTPValidateEmail\Validator as SmtpEmailValidator;
 
 class PagesController extends Controller
@@ -46,8 +47,7 @@ class PagesController extends Controller
 
         $validator = new SmtpEmailValidator($emails, $sender);
         $results   = $validator->validate();
-
-        print_r($results);
+        Response::json($results);
 
 
 
