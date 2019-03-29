@@ -33,7 +33,8 @@ class PagesController extends Controller
 
         $validator = new SmtpEmailValidator($emails, $sender);
         $results   = $validator->validate();
-        return Response::json($results);
+        $log = $validator->getLog();
+        return Response::json(array($results, $log));
 
 
 
