@@ -28,26 +28,12 @@ class PagesController extends Controller
             'm25fg4gral34kbn0txa5@hotmail.com',
             'aal9l81k7wlhxel93u7i@hotmail.com',
             'blooddity@hotmail.com',
-            'gv8roar3ei810nitn4ls@hotmail.com',
-            'awacqx96v3ee28j60akd@hotmail.com',
-            '2t38w5uszj6qffoh1ll0@hotmail.com',
-            'iwi5w9709j9msd3h7vz7@hotmail.com',
-            '96vhj4dfjih6k9yoi70g@hotmail.com',
-            'lgg2rmqjd4qraevem5e3@hotmail.com',
-            '58npqzir7p881tylwr0h@hotmail.com',
-            'bh00ot8marbl4thiq7jw@hotmail.com',
-            'hv9yyz3vyqj7aqm61420@hotmail.com',
-            'k9ak4cka2k0ksfq1rqs1@hotmail.com',
-            'njbnbr9hqng5onskts2h@hotmail.com',
-            'b8gxnnd9oxr3h5skpka4@hotmail.com',
-            'ddfed6cnmmrdclivzvwe@hotmail.com',
-            'rnpkic91xfentuo4jfux@hotmail.com',
-            'gzx8vhol9orfrbcjj20f@hotmail.com'
+
         );
 
         $validator = new SmtpEmailValidator($emails, $sender);
         $results   = $validator->validate();
-        Response::json($results);
+        return Response::json($results);
 
 
 
