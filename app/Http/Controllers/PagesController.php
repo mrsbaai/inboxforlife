@@ -124,7 +124,7 @@ class PagesController extends Controller
         foreach($emails as $email){
             array_push($results, $validator->validate($email, $sender));
         }
-        
+
         $log = $validator->getLog();
         return Response::json(array($results, $log));
 
