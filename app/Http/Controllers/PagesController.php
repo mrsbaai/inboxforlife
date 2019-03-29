@@ -18,10 +18,6 @@ class PagesController extends Controller
         $emails = array(
             'cj6ycio15gms6kw94yfi@hotmail.com',
             'sanae@hotmail.com',
-            'm4jqwo6akxjnsvkjsebi@hotmail.com',
-            '1ta0tw2n97s4p3lvbns6@hotmail.com',
-            'ugezih03csie8iq08xt0@hotmail.com',
-            'm25fg4gral34kbn0txa5@hotmail.com',
             'aal9l81k7wlhxel93u7i@hotmail.com',
             'blooddity@hotmail.com',
             'gv8roar3ei810nitn4ls@hotmail.com',
