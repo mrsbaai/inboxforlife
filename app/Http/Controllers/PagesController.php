@@ -16,10 +16,6 @@ class PagesController extends Controller
 
         $sender = 'example@hotmail.com';
         $emails = array(
-            'n0qqnp5eevof93omu53i@hotmail.com',
-            'k8m1urqtp94jomcdijfr@hotmail.com',
-            'z3jk1o6nusk1pbmysxvk@hotmail.com',
-            'jt4ueh0m5h2e4qzxax8f@hotmail.com',
             'ylfo2ik3ti9fgij4zmtw@hotmail.com',
             'blooddity@hotmail.com'
 
